@@ -11,7 +11,7 @@
 
 ## 📋 Assignment Overview
 
-For this project, students were given two options:
+For this project, the MS Data Science, DATA 607 class was given two options:
 
 ### Option 1: Standard Assignment
 Build a spam/ham classifier using established public datasets
@@ -71,22 +71,8 @@ Use a different labeled dataset of personal choice
 | **Updates** | 0.35 | 0.31 | 0.33 | **31%** |  High confusion |
 | **Inbox** | 0.33 | 0.24 | 0.28 | **24%** |  Very high confusion |
 
-### Confusion Matrix
 
 ```
-                    Predicted
-                Inbox  Promotions  Social  Updates
-Actual
-Inbox             38      28         0       50      ← 50 confused with Updates
-Promotions        29      66        19       17      
-Social            50      38       139       43      ← Clear winner
-Updates           43      28         2       50      ← 43 confused with Inbox
-```
-
-**Visual Representation:**
-
-![Confusion Matrix](confusion_matrix_naive_bayes.png)
-
 
 ## Finding 1: Category Distinctiveness is Critical
 
@@ -105,7 +91,7 @@ These terms rarely appear in other email categories, creating clear decision bou
 - Action verbs: "click here", "view now", "manage", "update"
 - Generic: "account", "email", "information", "service"
 
-**Example of Confusion:**
+**Example of Overlap of data:**
 - **Promotional email:** "Save 50% on your next order! Free shipping over $50."
 - **Update email:** "Your order has shipped. Track your delivery here."
 - **Personal email:** "Thanks for your order! Here's your receipt."
@@ -120,20 +106,7 @@ Created a production-ready web application featuring:
 - **File upload support** for .txt files
 - **Color-coded predictions** with category descriptions
 - **Confidence visualization** for prediction strength
-
 ```
-
-### Lessons Learned from Part 1
-
-**Successes:**
-
-✅ Completed end-to-end ML pipeline from data collection to deployment  
-✅ Created functional interactive application  
-✅ Identified category-specific performance patterns  
-✅ Gained insights into text similarity challenges  
-
-
----
 
 ## 🔬 Part 2: Spam/Ham Classification (Standard Assignment)
 
@@ -148,35 +121,7 @@ Based on findings from Part 1, I hypothesize that spam/ham classification will a
 - More focused feature learning
 
 
-### Planned Methodology
 
-- Source: SpamAssassin Public Corpus or Enron Email Dataset
-- Size: 10,000+ emails (5,000 spam, 5,000 ham)
-- Balance: Equal representation to prevent bias
-
-**Consistency with Part 1**
-To ensure fair comparison, I will maintain the same:
-- Text preprocessing pipeline
-- TF-IDF parameters (500 features, 5+ document frequency)
-- Model architecture (Naive Bayes)
-- Evaluation metrics (accuracy, precision, recall, F1, confusion matrix)
-- Train/test split (80/20 with stratified sampling)
-
-**Comparative Analysis**
-Will directly compare:
-- Part 1 (multi-class): 55% accuracy
-- Part 2 (binary): [Expected 85-95%]
-- Performance gain quantification
-- Feature importance differences
-- Error pattern analysis
-
-### Expected Outcomes
-
-**Quantitative Predictions:**
-- Overall accuracy: 85-95% (vs 55% in Part 1)
-- Precision (spam): >90%
-- Recall (spam): >85%
-- F1-Score: >87%
 
 
 ---
