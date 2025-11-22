@@ -1,6 +1,6 @@
 
 # 📧 Email Classification System: A Two-Part Exploration
-### *DATA 643 - Recommender Systems Course Project*
+### *DATA 607 - Recommender Systems Course Project*
 
 [![R](https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white)](https://www.r-project.org/)
 [![Shiny](https://img.shields.io/badge/Shiny-Dashboard-blue)](https://shiny.rstudio.com/)
