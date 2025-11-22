@@ -275,7 +275,7 @@ top_terms = 1000
 ## 👤 About
 
 **Created by:** Candace Grant
-**Course:** DATA 643 - Recommender Systems  
+**Course:** DATA 607 - Recommender Systems  
 **Institution:** CUNY School of Professional Studies  
 **Focus:** Machine Learning, NLP, Data Science
 
