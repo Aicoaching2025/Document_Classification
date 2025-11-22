@@ -7,8 +7,6 @@
 [![ML](https://img.shields.io/badge/ML-Naive%20Bayes-green)](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)
 [![NLP](https://img.shields.io/badge/NLP-TF--IDF-orange)](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
 
-> **A comprehensive text classification project demonstrating both ambitious problem formulation (personal email categorization) and standard benchmark evaluation (spam detection). This work showcases the value of comparative analysis and the importance of problem selection in machine learning success.**
-
 ---
 
 ## 📋 Assignment Overview
@@ -41,14 +39,6 @@ Use a different labeled dataset of personal choice
 
 ## 📊 Part 1 Results: Personal Inbox Classification
 
-### Motivation
-
-I chose to tackle my personal email organization as the "ambitious" option because:
-1. **Real-world relevance** - I actually wanted this functionality
-2. **Personalized learning** - My email patterns reflect my actual usage
-3. **Challenge** - Multiple similar categories would test model discrimination
-4. **Practical application** - Could deploy for daily use via Shiny app
-
 ### Methodology
 
 **Data Collection**
@@ -72,8 +62,6 @@ I chose to tackle my personal email organization as the "ambitious" option becau
 - Per-class precision, recall, F1-score
 - Confusion matrix analysis
 - Error pattern investigation
-
-### Results
 
 ### Overall Performance
 - **Overall Accuracy:** 55.0%
@@ -105,9 +93,8 @@ Updates           43      28         2       50      ← 43 confused with Inbox
 
 ![Confusion Matrix](confusion_matrix_naive_bayes.png)
 
-## Key Findings & Analysis
 
-### Finding 1: Category Distinctiveness is Critical
+## Finding 1: Category Distinctiveness is Critical
 
 **Social media emails achieved 87% accuracy** because they contain highly distinctive vocabulary:
 - Platform-specific terms: "Facebook", "LinkedIn", "Instagram", "Twitter"
@@ -116,7 +103,7 @@ Updates           43      28         2       50      ← 43 confused with Inbox
 
 These terms rarely appear in other email categories, creating clear decision boundaries.
 
-### Finding 2: Vocabulary Overlap Causes Confusion
+## Finding 2: Vocabulary Overlap Causes Confusion
 
 **Inbox, Promotions, and Updates struggled (24-41% accuracy)** due to shared transactional language:
 - Order-related: "order", "shipping", "delivery", "tracking", "confirmation"
@@ -175,7 +162,6 @@ Based on findings from Part 1, I hypothesize that spam/ham classification will a
 
 ### Planned Methodology
 
-**Dataset Selection**
 - Source: SpamAssassin Public Corpus or Enron Email Dataset
 - Size: 10,000+ emails (5,000 spam, 5,000 ham)
 - Balance: Equal representation to prevent bias
