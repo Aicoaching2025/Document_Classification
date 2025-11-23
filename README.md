@@ -30,15 +30,15 @@ Use a different labeled dataset of personal choice
 **Categories:** Inbox, Promotions, Social, Updates (4-class problem)  
 **Goal:** Understand whether machine learning could automate my email organization
 
-### Part 2: Spam/Ham Classification 🔄 
+### Part 2: Spam/Ham Classification ✅    https://rpubs.com/Candace63/Spam_Ham_Classification
+
 **Dataset:** Public spam corpus (10,000+ emails)  
 **Categories:** Spam, Ham (2-class problem)  
 **Goal:** Compare performance against established benchmarks and test hypothesis about problem complexity
 
 ---
 
-### 📊 Part 1 Results: Personal Inbox Classification✅  https://rpubs.com/Candace63/Spam_Ham_Classification
-
+### 📊 Part 1 Results: Personal Inbox Classification
 ### Methodology
 
 **Data Collection**
